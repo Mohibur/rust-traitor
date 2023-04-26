@@ -9,13 +9,13 @@ pub struct Rectangle {
 
 impl Area for Rectangle {
   fn area(&self) -> f64 {
-    return (self.x + self.y) * 2.0
+    return self.x * self.y
   }
 }
 
 impl Border for Rectangle {
   fn border(&self) -> f64 {
-    return self.x * self.y
+    return (self.x + self.y) * 2.0
   }
 }
 
